@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Tick from "./components/Tick"
-import A from "./components/Test"
+import BallList from "./components/BallList"
 const container = document.getElementById('root')
-// ReactDOM.render(<Tick num={10}/>,container)
-ReactDOM.render(<A></A>,container)
+ReactDOM.render(<BallList/>,container)
