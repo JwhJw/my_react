@@ -1,0 +1,27 @@
+.pageChange{
+    margin-top: 20px;
+}
+.item {
+    padding: 5px 14px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    color: rgb(79, 117, 189);
+    cursor: pointer;
+}
+.item.disable {
+    cursor: not-allowed;
+    color: #ccc;
+}
+.num {
+    margin-left: 10px;
+}
+.page-btn {
+    margin-left: 5px;
+    padding: 5px 14px;
+    border: 1px solid #ccc;
+    color: rgb(79, 117, 189);
+}
+.page-btn.active {
+    border: none;
+    color: rgb(189, 79, 79);
+}
