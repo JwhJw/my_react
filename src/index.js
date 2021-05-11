@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import Page from './components/Page';
-import PageTest from './components/PageTest';
+import Comp from './components/Comp'
 
 const container = document.getElementById('root')
-ReactDOM.render(<PageTest/>,container)
+ReactDOM.render(<Comp />, container)
