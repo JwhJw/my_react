@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Comp from './components/Comp'
+import App from './components/App'
 
 const container = document.getElementById('root')
-ReactDOM.render(<Comp />, container)
+ReactDOM.render(<App/>, container)
