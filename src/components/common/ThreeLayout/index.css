@@ -1,0 +1,20 @@
+.three-layout{
+    display: flex;
+    /* background-color: #eee; */
+    height: 500px;
+}
+.aside-left {
+    order: 1;
+    /* width: 100px; */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.main {
+    order: 2;
+    flex: 1 1 auto;
+    background-color: rgba(100, 100, 0, 0.3);
+}
+.aside-right {
+    order: 3;
+    /* width: 100px; */
+    background-color: rgba(0, 0, 0, 0.3);
+}
