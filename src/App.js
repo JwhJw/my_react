@@ -1,18 +1,15 @@
 import React from 'react'
-import ValidationComp,{ A } from './components/ValidationComp'
-import FunctionDefalut from './components/FunctionDefault'
+import { A, B } from './components/Comp'
+import withLog from './HOC/withLog'
+import withLogin from './HOC/withLogin'
+
+let ALog = withLog(withLogin(A));
+let BLog = withLog(withLogin(B));
 export default function App() {
     return (
-        <div>
-            <ValidationComp 
-            a={10}
-            handleClick={()=>{
-                console.log("It is a function")
-            }}
-            F = {FunctionDefalut}
-            g = {new A()}
-            score={100}
-            />
-        </div>
+        <>
+            <ALog a={10} isLogin/>
+            <BLog b={20} />
+        </>
     )
 }
