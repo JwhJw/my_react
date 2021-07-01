@@ -1,11 +1,18 @@
 import React from 'react'
-// import Test from './components/CheckBoxGroup/Test'
-// import Test from './components/RadioBoxGroup/Test'
-import Test from './components/Select/Test'
+import ValidationComp,{ A } from './components/ValidationComp'
+import FunctionDefalut from './components/FunctionDefault'
 export default function App() {
     return (
         <div>
-            <Test />
+            <ValidationComp 
+            a={10}
+            handleClick={()=>{
+                console.log("It is a function")
+            }}
+            F = {FunctionDefalut}
+            g = {new A()}
+            score={100}
+            />
         </div>
     )
 }
