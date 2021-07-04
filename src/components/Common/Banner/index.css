@@ -1,0 +1,6 @@
+.banner-wrapper{
+    border: 1px solid black;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+}

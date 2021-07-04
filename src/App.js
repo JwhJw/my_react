@@ -1,10 +1,10 @@
 import React from 'react'
-import Comp from "./components/Comp"
+import Banner from './components/Common/Banner/Test'
 
 export default function App() {
     return (
         <div>
-            <Comp/>
+            <Banner />
         </div>
     )
 }

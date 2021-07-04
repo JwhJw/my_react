@@ -1,0 +1,23 @@
+.banner-wrapper:hover .arrow-container{
+    display: flex;
+}
+.arrow-container{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* display: flex; */
+    justify-content: space-between;
+    display: none;
+}
+.arrow-container .arrow {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.arrow.left {
+    border-radius: 0 15px 15px 0;
+}
+.arrow.right {
+    border-radius: 15px 0 0 15px;
+}
