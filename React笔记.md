@@ -85,3 +85,23 @@ React是由**Facebook**研发的、用与**解决UI复杂度**的开源**JavaScr
 ❇️ 第三方：next.js、umijs
 
 > ⚠️ 凡是使用JSX的文件，必须导入React
+
+# 1-4.开发环境
+## 1.开发环境搭建
+
+> https://reactnative.cn/docs/next/environment-setup
+## 2.VSCode配置
+❇️ emmet配置：
+
+```json
+"javascript": "javascriptreact"
+```
+
+## 3.VSCode插件安装
+
+- ESLint：代码风格检查
+- ES7 React/Redux/GraphQL/React-Native snippets：快速代码编写
+
+## 4.Chrome插件安装
+
+❇️ React Developer Tools
