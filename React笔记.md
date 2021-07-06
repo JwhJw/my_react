@@ -1,3 +1,4 @@
+[toc]
 # 1-1 React概述
 > 官网：https://react.docschina.org/
 ## 1.什么是React
@@ -41,3 +42,40 @@ React是由**Facebook**研发的、用与**解决UI复杂度**的开源**JavaScr
 6. 源码部分
     - React源码分析
     - Redux源码分析
+
+# 1-2 Hello World
+
+☞引用：直接在页面上使用React，引用下面的JS
+```html
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+## 1.React.createElement
+❇️ 创建一个React元素，称作虚拟DOM，本质上是一个对象
+1. 参数1:元素类型，一般是字符串，一个普通的HTML元素
+2. 参数2:元素的属性，一个对像
+3. 后续参数：元素的子节点
+```js
+    var span = React.createElement(
+        "span",
+        {
+          style: {
+            color: "#fff",
+            backgroundColor: "#f88",
+          },
+        },
+        "一个span元素"
+      );
+    var h1 = React.createElement(
+        "h1",
+        {
+          title: "第一个React元素",
+        },
+        "hello",
+        "world",
+        span
+      );
+```
+## 2.JSX
+⚠️ JS的扩展语法，需要使用babel进行转义
