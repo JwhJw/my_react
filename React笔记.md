@@ -79,3 +79,9 @@ React是由**Facebook**研发的、用与**解决UI复杂度**的开源**JavaScr
 ```
 ## 2.JSX
 ⚠️ JS的扩展语法，需要使用babel进行转义
+
+# 1-3.使用脚手架搭建工程
+❇️ 官方：create-react-app
+❇️ 第三方：next.js、umijs
+
+> ⚠️ 凡是使用JSX的文件，必须导入React
