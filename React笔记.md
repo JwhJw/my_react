@@ -139,11 +139,11 @@ const obj = {       //声明
 }
 {obj}   //引用
 ```
-![报错信息 图片](./src/asset/errorPic.jpg)
+![报错信息 图片](./src/noteImg/errorPic.jpg)
 ⚠️ 可以放置React元素对象
 - 将表达式作为元素属性
 ```js
-import url from './asset/errorPic.jpg' //引入图片路径
+import url from './noteImg/errorPic.jpg' //引入图片路径
 <img src={url} alt="pic" /> //JSX表达式作为元素属性
 ```
 - 属性使用小驼峰命名法
@@ -154,7 +154,7 @@ const content = '<h1>This is a h1 element</h1>'
 {content}
 ```
 得到结果：
-![code 图片](./src/asset/1.jpg)
+![code 图片](./src/noteImg/1.jpg)
 ‣ dangerouslyStyleInnerHTML
 ```js
   <div dangerouslySetInnerHTML={{
@@ -163,7 +163,7 @@ const content = '<h1>This is a h1 element</h1>'
   </div>
 ```
 得到结果：
-![code 图片](./src/asset/2.jpg)
+![code 图片](./src/noteImg/2.jpg)
 
 ## 3.元素的不可变性
 - 虽然JSX元素是一个对象，但是该对象中的所有属性不可更改
