@@ -9,7 +9,7 @@ export default function Test(props) {
 
     return (
         <div className='modal' onClick={(e)=>{
-            if (e.target.className=="modal") {
+            if (e.target.className==="modal") {
                 datas.onClose()
             }
         }}
