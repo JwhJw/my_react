@@ -8,7 +8,7 @@ let BLog = withLog(withLogin(B));
 export default function App() {
     return (
         <>
-            <ALog a={10} isLogin/>
+            <ALog a={10} isLogin />
             <BLog b={20} />
         </>
     )
