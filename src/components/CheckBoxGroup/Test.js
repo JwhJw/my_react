@@ -3,11 +3,12 @@ import CheckBoxGroup from './index';
 import { getAllStudents } from '../../services/getStudents'
 export default class Test extends Component {
     state = {
-        data: [],
+        datas: [],
         choose: []
     }
     async componentDidMount() {
         const students = await getAllStudents();
+        // console.log(students)
         this.setState({
             data: students.map(item => {
                 return {
