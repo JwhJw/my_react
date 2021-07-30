@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import CheckBoxGroup from './index';
-import { getAllStudents } from '../../services/getStudents'
+import Select from './index';
+import { getAllStudents } from '../../../services/getStudents'
 export default class Test extends Component {
     state = {
-        datas: [],
-        choose: []
+        data: [],
+        value:'' 
     }
     async componentDidMount() {
         const students = await getAllStudents();
-        // console.log(students)
         this.setState({
             data: students.map(item => {
                 return {
@@ -22,14 +21,14 @@ export default class Test extends Component {
     }
     changeChoise = (val,name,e) => {
         this.setState({
-            choose: val
-        },()=>{console.log(this.state.choose,name,e)})
+            value: val
+        },()=>{console.log(this.state.value,name,e)})
     }
 
     render() {
         return (
             <div>
-                <CheckBoxGroup name="prefer" {...this.state} changeChoise={this.changeChoise} />
+                <Select name="prefer" {...this.state} changeChoise={this.changeChoise} />
             </div>
         )
     }
