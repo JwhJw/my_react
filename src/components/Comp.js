@@ -5,7 +5,7 @@ class Comp extends Component {
         isShow: true
     }
     handleClick = () => {
-        // console.log(this.txt)
+        console.log(this.txt)
         this.setState({
             isShow: !this.state.isShow
         })
